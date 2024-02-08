@@ -33,7 +33,7 @@ function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
         id: doc.id,
         filename: doc.data().filename || doc.id,
         timestamp: new Date(doc.data().timestamp?.seconds * 1000) || undefined,
-        fullName: doc.data().fullName,
+        fullname: doc.data().fullName,
         downloadURL: doc.data().downloadURL,
         type: doc.data().type,
         size: doc.data().size,
